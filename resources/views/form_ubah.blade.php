@@ -7,7 +7,7 @@
 				<h3>Ubah Siswa</h3>
 			</div>
 			<div class="card-body">
-				<a href="{{route ('siswa.index')}}" class="btn btn-primary btn-sm">Kembali</a>
+				<a href="{{route ('siswa.index')}}" class="btn btn-primary">Kembali</a>
 				<form action="{{route('siswa.update', $siswa->id)}}" method="POST">
 					@csrf
 					@method('PUT')
@@ -16,7 +16,7 @@
 						NIS <input type="text" name="nis" required value="{{$siswa->nis}}">
 						Tanggal Lahir <input type="date" name="tgl_lahir" required value="{{$siswa->tgl_lahir}}">
 					</ul>
-					<input type="submit" value="Ubah Siswa" class="btn btn-success mt-2 mx-2">
+					<input type="submit" value="Update Siswa" class="btn btn-success mt-2">
 				</form>
 			</div>
 		</div>	

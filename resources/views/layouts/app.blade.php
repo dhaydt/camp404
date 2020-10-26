@@ -35,10 +35,13 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="mr-2">
-                            <a href="{{ url('/data-siswa') }}">Data Siswa</a>
+                            <a href="{{ route('siswa.index') }}">Data Siswa</a>
                         </li>
-                        <li>
+                        <li class="mr-2">
                             <a href="{{ url('/info-kegiatan') }}"> Info Kegiatan</a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="{{ route('user.index') }}"> Management User</a>
                         </li>
                     </ul>
 
